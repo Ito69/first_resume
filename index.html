@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="anastasia, cv, resume">
-    <meta name="discription" content="Это сайт-резюме Анастасии К."> 
+    <meta name="discription" content="Это сайт-резюме Анастасии К.">
+    <link rel="stylesheet" href="styles.css">
     <title>Anastasia's resume</title>
 </head>
+
 <body>
-    <img src="аватар.jpg" alt="Анастасия" width="290">
-<h1>Анастасия Курилко</h1>
+    <div class="container">
+        <div class="info">
+            <img src="аватар.jpg" alt="Анастасия" class="avatar">
 
-<h2><strong>Социальные сети:</strong></h2>
-<a href="https://t.me/ito_san69" target="_blank">Telegram</a>
-|
-<a href="https://www.instagram.com/ito_san69/" target="_blank">Instagram</a>
-|
-<a href="https://vk.com/id228598713" target="_blank">Вконтакте</a>
+            <div class="info-text">
+                <h1>Анастасия Курилко</h1>
+                <div>
+                    <h2><strong>Социальные сети:</strong></h2>
+                    <a href="https://t.me/ito_san69" target="_blank">Telegram</a>
+                    |
+                    <a href="https://www.instagram.com/ito_san69/" target="_blank">Instagram</a>
+                    |
+                    <a href="https://vk.com/id228598713" target="_blank">Вконтакте</a>
+                </div>
+                <p>Я занимаюсь <strong>дизайном уже более 5-и лет</strong>,
+                    постоянно развиваюсь и <strong>интересуюсь IT-сферой.</strong></p>
+                <p>Люблю <em>узнавать что-то новое, проводить свободное время на природе.</em></p>
+            </div>
+        </div>
 
-<p>Я занимаюсь <strong>дизайном уже более 5-и лет</strong>,
-    постоянно развиваюсь и <strong>интересуюсь IT-сферой.</strong></p>
-<p>Люблю <em>узнавать что-то новое, проводить свободное время на природе.</em></p>
+        <div class="card bg-yellow">
+            <h3>Мои хобби</h3>
+            <ul class="list">
+                <li>UI/UX дизайн</li>
+                <li>3d-моделирование</li>
+                <li>ПП десерты</li>
+                <li>Растяжка</li>
+                <li>Сноуборд</li>
+            </ul>
+        </div>
 
- <h3>Мои хобби</h3>
- <ul>
-     <li>UI/UX дизайн</li>
-     <li>3d-моделирование</li>
-     <li>ПП десерты</li>
-     <li>Растяжка</li>
-     <li>Сноуборд</li>
- </ul>
+        <div class="card bg-pink">
+            <h3>Опыт работы</h3>
+            <table>
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Подработка</td>
+                        <td>Няня</td>
+                        <td>2019-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Фриланс</td>
+                        <td>Дизайнер интерьера</td>
+                        <td>2020-2021</td>
+                    </tr>
+                    <tr>
+                        <td>РуСалют</td>
+                        <td>Консультант</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Wildberries</td>
+                        <td>Сотрудник пункта выдачи</td>
+                        <td>2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
- <h3>Опыт работы</h3>
- <table>
-     <thead>
-         <tr>
-             <th>Название</th>
-             <th>Должность</th>
-             <th>Год</th>
-         </tr>
-     </thead>
-     <tbody>
-         <tr>
-             <td>Подработка</td>
-             <td>Няня</td>
-             <td>2019-2020</td>
-         </tr>
-         <tr>
-            <td>Фриланс</td>
-            <td>Дизайнер интерьера</td>
-            <td>2020-2021</td>
-        </tr>
-         <tr>
-            <td>РуСалют</td>
-            <td>Консультант</td>
-            <td>2021-2022</td>
-        </tr>
-        <tr>
-            <td>Wildberries</td>
-            <td>Сотрудник пункта выдачи</td>
-            <td>2022</td>
-        </tr>
-     </tbody>
- </table>
-
- <h2>Связаться со мной</h2>
- <form action="">
-     <div>
-         <label for="name">Ваше имя:</label>
-         <input type="text" id="name" placeholder="Введите имя">
-     </div>
-     <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
+        <form action="#" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+        </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Отправить!" class="btn">
+            </div>
+        </form>
     </div>
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-    <div>
-        <input type="submit" value="Отправить!">
-    </div>
- </form>
-
 </body>
+
 </html>
